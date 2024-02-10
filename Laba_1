@@ -52,3 +52,62 @@
 #    return sum
 #c = int(input())
 #print("Произведение делителей числа, сумма цифр которых меньше, чем сумма цифр числа : " + str(c) + " = " + str(proizv(c)))
+#
+#
+#
+# Задания 2-4: Решить задачи по вариантам. Задание в отдельную программу. Предложить пользователю решить, какую задачу задачу решать,
+#             каждая задача - отдельная ф-ция. Каждая ф-ция - отдельный коммит. Итоговая задача - отдельный коммит. Решить с помощью методов строк.
+#
+# Задача 1: Дана строка. Необходимо найти общее количество русских символов.
+#def rus_alfavit(text):
+#    alf = {"а","б","в","г","д","е","ё","ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф","х","ц","ч","ш","щ","ъ","ы","ь","э","ю","я",}
+#    kol = 0
+#    for char in text:
+#       if char.lower() in alf:
+#          kol += 1
+#    return kol
+## Задача 9: Дана строка. Необходимо проверить образуют ли строчные символы латиницы палиндром.
+#def proverka_palindrom(text):
+#    small_text = small_letters(text)
+#    reversed_small_text = small_text[::-1]
+#    return small_text == reversed_small_text
+#def small_letters(text):
+#    small_stroka = ""
+#    for letter in text:
+#        if letter.islower():
+#            small_stroka += letter
+#    return small_stroka
+## Задача 18: Найти в тексте даты формата "день.месяц.год"
+#import re
+#def FindDates(text):
+#    shablon = r'\b\d{1,2}\.\d{1,2}\.\d{4}\b'
+#    dates = re.findall(shablon, text)
+#    return dates
+#
+#print("Выберите задачу для решения: ")
+#print("1) Найти общее количество русских символов в строке")
+#print("2) Проверить образуют ли строчные символы латиницы палиндром в строке")
+#print("3) Найти в тексте даты формата """"день.месяц.год""")
+#a = int(input())
+#if a == 1:
+#    print("Введите строку для поиска общего количества русских букв:")
+#    text = str(input())
+#    print("Строка " + " содержит русские буквы в кол-ве: " + str(rus_alfavit(text)))
+#elif a == 2:
+#    print("Введите строку для проверки на палиндром:")
+#    text = str(input())
+#   if proverka_palindrom(text) == True:
+#        prefiks = ""
+#    else:
+#       prefiks = " не"
+#    print("Строка " + prefiks + " является палиндромом")
+#elif a == 3:
+#    print("Введите строку для поиска в ней дат формата день.месяц.год:")
+#    text = str(input())
+#    found_dates = FindDates(text)
+#    if found_dates:
+#        print("Строка " + " содержит в себе следующие даты: ")
+#        for date in found_dates:
+#            print(str(date))
+#    else:
+#       print("Даты такого формата не найдены")
