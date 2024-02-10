@@ -1,0 +1,54 @@
+# #Задание 1: Составить 3 функции для работы с цифрами или делителями
+#             числа на основании варианта. Каждая ф-ция - отдельный коммит.
+# Функция 1: Найти сумму простых делителей числа
+# def sum_del(x):
+#      sum = 0
+#      for i in range(1,x+1):
+#          if (x%i==0 and prost(i)):
+#              sum = sum + i
+#      return sum
+# def prost(x):
+#      if x == 1:
+#         return False
+#      for i in range(2,x):
+#          if x%i==0:
+#              return False
+#      return True
+#
+# a = int(input())
+# print("Сумма простых делителей числа: " + str(a) + " = " + str(sum_del(a)))
+#
+# Функция 2: Найти количество нечетных цифр числа, больших 3.
+# def kol_nechet(x):
+#     kol = 0
+#     while x != 0:
+#         a = x%10
+#         if (a%2!=0 and a>3):
+#             kol = kol + 1
+#         x = x//10
+#     return kol
+# b = int(input())
+# print("Количество нечетных цифр числа, больших 3 : " + str(b) + " = " + str(kol_nechet(b)))
+#
+# Функция 3: Найти произведение таких делителей числа, сумма цифр которых меньше, чем сумма цифр исходного числа.
+# Задача 1.3
+#def proizv(x):
+#    pr = 1
+#    summa_x = summa_cifr(x)
+#    for i in range(1, x + 1):
+#        if (x % i == 0 and summa_cifr(i) < summa_x):
+#            pr = pr * i
+#    return pr
+#def summa_cifr(x):
+#    sum = 0
+#    while x != 0:
+#        if x < 10:
+#            sum = sum + x
+#        else:
+#            a = x % 10
+#            sum = sum + a
+#        x = x // 10
+#    return sum
+#c = int(input())
+#print("Произведение делителей числа, сумма цифр которых меньше, чем сумма цифр числа : " + str(c) + " = " + str(proizv(c)))
+#
