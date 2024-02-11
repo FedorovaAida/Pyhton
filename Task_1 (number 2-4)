@@ -24,3 +24,9 @@
 #        if letter.islower():
 #            small_stroka += letter
 #    return small_stroka
+# Задача 18: Найти в тексте даты формата "день.месяц.год"
+#import re
+#def FindDates(text):
+#    shablon = r'\b\d{1,2}\.\d{1,2}\.\d{4}\b'
+#    dates = re.findall(shablon, text)
+#    return dates
