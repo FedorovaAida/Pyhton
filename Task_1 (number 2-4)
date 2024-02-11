@@ -9,3 +9,14 @@
 #       if char.lower() in alf:
 #          kol += 1
 #    return kol
+# Задача 9: Дана строка. Необходимо проверить образуют ли строчные символы латиницы палиндром.
+#def proverka_palindrom(text):
+#    small_text = small_letters(text)
+#    reversed_small_text = small_text[::-1]
+#    return small_text == reversed_small_text
+#def small_letters(text):
+#    small_stroka = ""
+#    for letter in text:
+#        if letter.islower():
+#            small_stroka += letter
+#    return small_stroka
