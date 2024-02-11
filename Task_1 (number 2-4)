@@ -12,11 +12,15 @@
 # Задача 9: Дана строка. Необходимо проверить образуют ли строчные символы латиницы палиндром.
 #def proverka_palindrom(text):
 #    small_text = small_letters(text)
+#    if small_text == '':
+#       return False  
 #    reversed_small_text = small_text[::-1]
 #    return small_text == reversed_small_text
 #def small_letters(text):
+#    alf = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u" "v",
+#           "w", "x", "y", "z"}
 #    small_stroka = ""
-#    for letter in text:
+#    for letter in text and letter.lower() in alf:
 #        if letter.islower():
 #            small_stroka += letter
 #    return small_stroka
