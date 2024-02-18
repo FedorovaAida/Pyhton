@@ -1,0 +1,13 @@
+# Задание 9: Прочитать список строк с клавиатуры. Упорядочить по длине строки
+print("Введите строки для дальнейшего упорядочивания по длине строки")
+strings = []
+str = str(input())
+while(str):
+    strings.append(str)
+    str = input()
+    for i in range(0, len(strings)-1):
+        for j in range(i+1, len(strings)):
+            if(len(strings[i]) > len(strings[j])):
+                 strings[i], strings[j] = strings[j], strings[i]
+print("Упорядоченные строки: ")
+print(strings)
