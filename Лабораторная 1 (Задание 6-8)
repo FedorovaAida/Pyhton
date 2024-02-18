@@ -27,3 +27,23 @@ def Max_Real_Number(text, value):
          else:
              count = 0
      return str(max_count)
+def function_activation():
+    print("Выберите задачу для решения: ")
+    print("1) Найти максимальное вещественное число в тексте")
+    print("2) Найти минимальное из имеющихся в строке рациональных чисел")
+    print("3) Найти наибольшее количество идущих подряд цифр")
+    a = int(input())
+    if a == 1:
+        print("Введите текст для нахождения максимального вещественного числа в ней:")
+        text = str(input())
+        print(Max_Real_Number(text, "max"))
+    elif a == 2:
+        print("Введите строку для посике в ней минимального из имеющихся рациональных чисел:")
+        text = str(input())
+        print(Max_Real_Number(text, "min"))
+    elif a == 3:
+        print("Введите строку для поиска в ней наибольшего кол-ва идущих подряд цифр:")
+        text = str(input())
+        count = Max_Consecutive_Numbers(text)
+        print("Наибольшее кол-во идущих подряд цифр в строке = " + str(count))
+function_activation()
