@@ -15,3 +15,15 @@ def Max_Real_Number(text, value):
             return "Минимальное рациональное число в тексте = " + str(min_number)
     else:
         return "В тексте нет таких чисел"
+# Задача 18: Дана строка. Необходимо найти минимальное из имеющихся в ней рациональных чисел
+ def Max_Consecutive_Numbers(text):
+     max_count = 0
+     count = 0
+     for char in text:
+         if char.isdigit():
+             count += 1
+             if count > max_count:
+                 max_count = count
+         else:
+             count = 0
+     return str(max_count)
