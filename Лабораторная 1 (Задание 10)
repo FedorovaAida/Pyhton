@@ -1,0 +1,13 @@
+# Задание 10: Дан список строк с клавиатуры. Упорядочить по количеству слов в строке
+# print("Введите строки для дальнейшего упорядочивания по кол-ву слов в строке")
+# strings = []
+# str = str(input())
+# while(str):
+#     strings.append(str)
+#     str = input()
+# for i in range(0, len(strings)-1):
+#     for j in range(i+1, len(strings)):
+#         if (len(strings[i].split()) > len(strings[j].split())):
+#             strings[i], strings[j] = strings[j], strings[i]
+# print("Упорядоченные строки: ")
+# print(strings)
